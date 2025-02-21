@@ -1863,7 +1863,7 @@
                         }
                     }
                     
-                    textElement.className =  "node-"+key;
+                    textElement.className - (this.text[key].HTMLclass) ? "node-" + key + this.text[key].HTMLclass : "node-" + key;
                     textElement.appendChild(document.createTextNode(
                         this.text[key].val ? this.text[key].val :
                         this.text[key] instanceof Object ? "'val' param missing!" : this.text[key]
